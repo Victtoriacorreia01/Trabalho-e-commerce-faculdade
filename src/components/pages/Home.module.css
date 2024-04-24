@@ -1,13 +1,31 @@
-.fullcontainer{
-    background-color: aliceblue;
-}
+/* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Estilo para o trilho da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Estilo para o botão de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background: #f188b2;
+    border-radius: 5px;
+    
+  }
+  
+  /* Mudança de cor ao passar o mouse sobre a barra de rolagem */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e96c7d;
+  }
 
 .content{
     display: flex;
     position: relative;
     align-items: flex-start;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,7 +57,7 @@
     display: inline-block;
     margin-top: 20px;
     padding: 10px;
-    color: black;
+    color: rgb(46, 46, 46);
     letter-spacing: 3px;
     font-size: 14px;
     border-radius: 5px;
@@ -55,5 +73,151 @@
 .img{
     width: 350px;
     margin-left: 800px;
-    margin-top: 50px;
+    margin-top: 160px;
+    border-radius: 30px;
 }
+
+.category{
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px 0;
+    margin-bottom: 80px;
+
+}
+.categorysec{
+    margin-top: 20px;
+    margin-bottom: 90px;
+
+}
+
+.categorysec h2{
+
+    text-align: center;
+    color: rgb(250, 15, 54);
+}
+.category .categorybox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.category .categorybox .boxdress {
+    margin: 30px 20px;
+
+}
+
+.category .categorybox .boxdress  img{
+    width: 300px;
+    border-radius: 5px;
+    height: 450px;
+}
+.boxshirt  img{
+    width: 300px;
+    border-radius: 5px;
+    height: 400px;
+}
+
+.category .categorybox .boxcontent{
+    position: absolute;
+    z-index: 1;
+    margin-left: 30px;
+    margin-top: 300px;
+    
+
+}
+.category .categorybox .boxcontent h3{
+    color: rgb(248, 19, 95);
+    font-size: 15px;
+}
+
+.category .categorybox .boxcontent label{
+    display: block;
+    font-size: 25px;
+    color: rgb(71, 70, 70);
+}
+
+.category .categorybox .boxcontent a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 25px;
+    background: rgb(14, 12, 12);
+    transition: all .19s ease-in;
+    color: rgb(255, 22, 92);
+    text-decoration: none;
+}
+
+.category .categorybox .boxcontent a:hover{
+    background-color: rgb(10, 9, 9);
+    color: rgb(255, 255, 255);
+}
+
+.category .categorybox .boxcontent h3{
+    color: brown;
+}
+
+.mostrated{
+    padding: 50px;
+    margin: 50px 0;
+    color: rgb(244, 31, 67);
+}
+
+.mostratedbox .mostratedtitle{
+    margin-bottom: 80px;
+    text-align: center;
+    
+}
+
+.mostrateditens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+
+.mostrateditens .mostrateditem {
+    padding: 30px;
+    margin: 80px 30px;
+    height: 300px;
+}
+
+.mostrateditens .mostrateditem .mostimage img{
+    height: 250px;
+    width: 200px;
+}
+
+.mostrateditens .mostrateditem .mostratedbody{
+    margin-top: 15px;
+}
+
+.mostrateditens .mostrateditem .mostratedbody h4{
+    color: rgb(248, 99, 154);
+    font-weight: 400;
+}
+.mostrateditens .mostrateditem .mostratedbody h4:hover{
+    color: rgb(222, 3, 83);
+    font-weight: 400;
+}
+
+.mostrateditens .mostrateditem .mostratedbody .icons {
+    font-size: 15px;
+    color: yellow;
+    margin-top: 10px;
+}
+
+.mostrateditens .mostrateditem .mostratedbody .price label{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.mostrateditens .mostrateditem .mostratedbody .price label.sale{
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: line-through;
+    color: rgb(91, 91, 91);
+}
+

@@ -2,7 +2,10 @@
     display: flex;
     justify-content: space-between;
     background-color: #F8E5F1;
-    padding: 2em;
+    padding: 1.3em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .list{
@@ -21,7 +24,7 @@
 
 .btnsearch{
     position: absolute; /* Posição absoluta para o lupa */
-    top: 10%; /* Alinhar verticalmente ao centro */
+    top: 51%; /* Alinhar verticalmente ao centro */
     right: 886px; /* Ajustar margem direita */
     transform: translateY(-50%); 
     background-color: rgb(238, 185, 202);
@@ -74,7 +77,7 @@
     cursor: pointer;
 }
 .iconuser:hover{
-    color: chartreuse;
+    color: rgb(229, 255, 0);
 }
 .iconheart{
     width: 50px;
@@ -84,7 +87,7 @@
     cursor: pointer;
 }
 .iconheart:hover{
-    color: chartreuse;
+    color: rgb(229, 255, 0);
 }
 .iconcart{
     width: 50px;
@@ -94,5 +97,5 @@
     cursor: pointer;
 }
 .iconcart:hover{
-    color: chartreuse;
+    color: rgb(229, 255, 0);
 }

@@ -3,13 +3,15 @@ import Home from './components/pages/Home'
 import Contato from './components/pages/Contato'
 import Company from './components/pages/Company'
 import Novidades from './components/pages/Novidades'
+import Cart from './components/Cart/Cart'
 import Container from './components/layout/Container'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+
 function App() {
   return (
     <Router>
-    <Navbar/>
+   <Navbar/>
       <Switch>
         <Container customClass="min-height">
         <Route exact path="/">
@@ -24,9 +26,15 @@ function App() {
         <Route exact path="/novidades">
           <Novidades/>
         </Route>
+        <Route exact path="/Cart">
+          <Cart />
+        </Route>
         </Container>
       </Switch>
-      <Footer/>
+      <Footer/> 
+    
+
+
     </Router>
   );
 }

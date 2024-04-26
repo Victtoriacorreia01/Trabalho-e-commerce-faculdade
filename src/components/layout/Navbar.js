@@ -8,7 +8,9 @@ import lupa2 from '../../components/img/lupa2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import CartButton  from '../CartButton/CartButton';
+import { faHeadset } from '@fortawesome/free-solid-svg-icons';
+
 
 function Navbar(){
     return(
@@ -37,7 +39,8 @@ function Navbar(){
                 <div className={styles.icons}>
                 <FontAwesomeIcon icon={faUser} className={styles.iconuser} />
                 <FontAwesomeIcon icon={faHeart} className={styles.iconheart}  />
-                <FontAwesomeIcon icon={faCartShopping} className={styles.iconcart}  />
+                < CartButton />
+                <FontAwesomeIcon icon={faHeadset} className={styles.iconhead}  />
                 </div>
             </Container>
         </nav>

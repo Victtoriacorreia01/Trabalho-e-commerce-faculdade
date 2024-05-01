@@ -26,7 +26,7 @@ function App() {
         <Route exact path="/novidades">
           <Novidades/>
         </Route>
-        <Route exact path="/Cart">
+        <Route>
           <Cart />
         </Route>
         </Container>

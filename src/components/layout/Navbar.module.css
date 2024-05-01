@@ -23,9 +23,9 @@
 }
 
 .btnsearch{
-    position: absolute; /* Posição absoluta para o lupa */
-    top: 51%; /* Alinhar verticalmente ao centro */
-    right: 886px; /* Ajustar margem direita */
+    position: absolute; 
+    top: 51%; 
+    right: 912px;
     transform: translateY(-50%); 
     background-color: rgb(238, 185, 202);
     border: 1px  #666; 
